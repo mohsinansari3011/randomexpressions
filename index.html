@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Random Equation</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4"
+        crossorigin="anonymous">
+
+    <style>
+        .center {
+            margin: 0 auto;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="jumbotron ">
+        <h1 style="text-align: center;">RANDOM EQUATION:</h1>
+
+        <div class="form-control col-md-5  center ">
+            <label for="ques" >Question:</label>
+            <label for="question" id="label1" class="form-control col-md-6 "></label>
+            <br>
+            <label for="ans" >Answer</label>
+            <br>
+            <input type="text" class="form-control col-md-6" id="txtans">
+            <br>
+            <br>
+            <div class="alert alert-success" id="divSuccess" style="display: none;">
+                    <strong>Correct!</strong> 
+                  </div>
+            <div class="alert alert-danger" id="divError" style="display: none;">
+                    <strong>Wrong!</strong> 
+                  </div>
+            <input type="submit" class="btn" style="margin-left:100px; " onclick="myFunc()" value="Check">
+  <div id="but"> </div>
+            
+        </div>
+    </div>
+  
+    <script src="app.js"></script>
+</body>
+
+</html>
